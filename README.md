@@ -21,7 +21,7 @@
 ## Installing
 On your catkin_ws/src,
 ```
-git clone https://github.com/SeunghyunLim/Dpoom_gazebo.git
+git clone https://github.com/SeunghyunLim/Ball_bot.git
 ```
 and 'cd ~/catkin_ws && catkin_make'
 
