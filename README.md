@@ -34,3 +34,8 @@ for teleop keyboard,
 ```
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
+
+## Rviz visualization
+```
+rviz -d ballbot_rviz.rviz
+```
