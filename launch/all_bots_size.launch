@@ -1,0 +1,27 @@
+<launch>
+  <arg name="y1_pos" default="0.3"/>
+  <arg name="x1_pos" default="0.0"/>
+  <arg name="z_pos" default="0.09"/>
+
+  <arg name="y2_pos" default="0.0"/>
+  <arg name="x2_pos" default="0.0"/>
+
+  <arg name="y3_pos" default="-0.3"/>
+  <arg name="x3_pos" default="0.0"/>
+
+  <arg name="yaw" default="1.57"/>
+
+  <include file="$(find Ball_bot)/launch/ball_bot_office_world.launch">
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+  </include>
+
+  <param name="robot_description1" command="$(find xacro)/xacro --inorder $(find Ball_bot)/urdf/ball_bot.urdf.xacro" />
+  <param name="robot_description2" command="$(find xacro)/xacro --inorder $(find Ball_bot)/urdf/ball_bot_130.urdf.xacro" />
+  <param name="robot_description3" command="$(find xacro)/xacro --inorder $(find Ball_bot)/urdf/ball_bot_125.urdf.xacro" />
+
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf1" args="-urdf -model $ball_bot -x $(arg x1_pos) -y $(arg y1_pos) -z $(arg z_pos) -Y $(arg yaw) -param robot_description1" />
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf2" args="-urdf -model $ball_bot_130 -x $(arg x2_pos) -y $(arg y2_pos) -z $(arg z_pos) -Y $(arg yaw) -param robot_description2" />
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf3" args="-urdf -model $ball_bot_125 -x $(arg x3_pos) -y $(arg y3_pos) -z $(arg z_pos) -Y $(arg yaw) -param robot_description3" />
+</launch>
