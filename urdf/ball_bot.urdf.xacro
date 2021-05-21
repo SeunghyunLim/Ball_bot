@@ -17,7 +17,7 @@
       <geometry>
         <mesh filename="package://Ball_bot/meshes/base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="white"/>
+      <material name="grey"/>
     </visual>
 
     <collision>
