@@ -9,6 +9,7 @@
 |---|---|
 |<center><img src="https://github.com/SeunghyunLim/Ball_bot/blob/master/img/ball_bot.png" alt="drawing" width="285"/></center>|<center><img src="https://github.com/SeunghyunLim/Ball_bot/blob/master/gif/ball_bot.gif" alt="drawing" width="385"/></center>|
 
+<center><img src="https://github.com/SeunghyunLim/Ball_bot/blob/master/img/variable_bots.png" alt="drawing" width="720"/></center>
 
 ## Dependencies
 - Ubuntu 18.04
