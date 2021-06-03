@@ -1,4 +1,4 @@
-# Dpoom_gazebo
+# Ball_bot
 * This reopsitory contains __Gazebo simulation of Ball_bot__, a shepere shaped throw-able robot with compact size and radius-deforming wheels.
 * Covered urdf and gazebo.
 
